@@ -31,3 +31,17 @@ if (3 < lastDay && lastDay <= 30) {
     }
   }
 }
+
+/** Problem 04 - (Delete / Store) */
+var fileName = "pdfData.jpg";
+//write your code here
+var splitName = fileName.split(".");
+if (
+  splitName[0][0] == "#" ||
+  splitName[splitName.length - 1] == "pdf" ||
+  splitName[splitName.length - 1] == "docx"
+) {
+  console.log("Store");
+} else {
+  console.log("Delete");
+}
