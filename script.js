@@ -51,3 +51,20 @@ var student = { name: "jhanku", roll: 1014, department: "cse" };
 //write your code here
 var email = `${student.name}${student.roll}.${student.department}@ph.ac.bd`;
 console.log(email);
+
+/** Problem 06 :  (Current Salary )  */
+var experience = 30;
+var startingSalary = 45000;
+//write your code here
+if (
+  0 < startingSalary &&
+  startingSalary <= 10 ** 6 &&
+  0 < experience &&
+  experience <= 50
+) {
+  var currentSalary = startingSalary;
+  for (var ex = 1; ex <= experience; ex++) {
+    currentSalary += currentSalary * (5 / 100);
+  }
+  console.log(currentSalary.toFixed(2));
+}
